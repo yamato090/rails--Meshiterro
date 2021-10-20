@@ -8,10 +8,9 @@ class PostCommentsController < ApplicationController
   end
 
   def destroy
-
   end
-  private
   
+  private
   def post_comment_params
     params.require(:post_comment).permit(:comment)
   end
